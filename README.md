@@ -18,13 +18,13 @@ To begin using Onward Web Migration, simply download the plugin. Once installed,
 Onward Web Migration is free and open-source software under GPLv2 or later.
 
 The source repository is maintained at:
-https://github.com/chathuJ/onward-web-migration
+https://github.com/cj-careconnect/OWM
 
 ### JavaScript Assets:
 - `unified-workspace.js`: Modern unified migration UI controller (unminified, human-readable).
 - `browser-zip.js`: Streaming ZIP64 and Web Worker compression engine (unminified, human-readable).
 - `util.min.js`, `import.min.js`, `export.min.js`, `backups.min.js`: Modular JavaScript components bundled via Webpack. Build steps:
-  1. `git clone https://github.com/chathuJ/onward-web-migration.git`
+  1. `git clone https://github.com/cj-careconnect/OWM.git`
   2. `npm install`
   3. `npm run build`
 

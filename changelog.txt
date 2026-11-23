@@ -1,0 +1,32 @@
+= 1.0.7 =
+* Security: Strictly enforce nonce verification and user capability checks on all AJAX endpoints (list_backups, delete, status, upload, flush_permalinks)
+* Security: Removed secret-key bypass for authenticated users across all controller endpoints
+* Security: Enforce unguessable 32-character random tokens for generated backup archive filenames
+* Security: Added directory deny rules (.htaccess with Require all denied, web.config, and index.php) to storage and backup directories
+* Security: Sanitize and strip secret keys, nonces, and authentication credentials from all operational logs
+* Security: Strictly validate archive filenames during import upload to only permit .zip/.wpress extensions and prevent arbitrary PHP script insertion
+* Security: Disabled arbitrary PHP execution via mu-plugins extraction during archive restoration
+* Security: Removed arbitrary custom CSS injection from package metadata (relying on native WordPress database post records)
+* Compatibility: Dynamically support external WP_PLUGIN_DIR and wp_upload_dir() locations configured outside WP_CONTENT_DIR
+* Documentation: Documented source code availability, build steps, and third-party libraries
+
+= 1.0.6 =
+* Minor UI upgrade
+
+= 1.0.5 =
+* Renamed plugin to Onward Web Migration and updated plugin slug to onward-web-migration
+* Updated text domain to match plugin slug for WordPress.org compliance
+
+= 1.0.3 =
+* Automatically deactivate pre-existing old plugins and keep only restored backup plugins active
+* Preserve exact original post, page, product, and content publication status as per the backup site
+
+= 1.0.2 =
+* UI design enhancements, improved contrast accessibility, and view navigation refinements
+
+= 1.0.1 =
+* Added failsafe for larger DB imports
+
+= 1.0.0 =
+* Export themes files
+* Export installed plugins
